@@ -2557,7 +2557,7 @@ function daftarMember()
 		}
 		
 		// cek password
-		if (!isset($password) || !isset($confirmed) || !$password || !$confirmed || $password != $confirmed )
+		if (!isset($password) || !isset($confirmed) || $password != $confirmed )
 		{
 			$html[] = '<h2>Error</h2>
 					  <div class="cleaner"></div>
