@@ -1,0 +1,50 @@
+<Files .htaccess>
+order allow,deny
+deny from all
+</Files>
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)\.html$ index.php?content=detailpage&pageid=$1 [L]
+RewriteRule ^produk-([^/]*)$ index.php?content=productdetail&slug=$1 [L]
+RewriteRule ^kategori-([^/]*)$ index.php?content=prodcatdetail&catslug=$1 [L]
+RewriteRule ^halaman-kategori-(.*)-([0-9]+)$ index.php?content=prodcatdetail&catslug=$1&halaman-kategori=$2 [L]
+RewriteRule ^shopping-([^/]*)$ index.php?content=basket&productid=$1 [L]
+RewriteRule ^checkout-([^/]*)$ index.php?content=checkout&id=$1 [L]
+RewriteRule ^transaction$ index.php?content=savetransaction [L]
+RewriteRule ^member-transaction$ index.php?content=membertransaction [L]
+RewriteRule ^testimoni$ index.php?content=testimoni [L]
+RewriteRule ^testimoni([^/]*)$ index.php?content=testimoni [L]
+RewriteRule ^hubungi-kami$ index.php?content=contactform [L]
+RewriteRule ^search-product$ index.php?content=searchproduct [L]
+RewriteRule ^search-article$ index.php?content=searcharticle [L]
+RewriteRule ^blog$ index.php?content=blog [L]
+RewriteRule ^blog([^/]*)$ index.php?content=blog&blogid=$1 [L]
+RewriteRule ^read-([^/]*)$ index.php?content=blogdetail&blogid=$1 [L]
+RewriteRule ^article-([^/]*)$ index.php?content=article&articleid=$1 [L]
+RewriteRule ^article([^/]*)$ index.php?content=article&articleid=$1 [L]
+RewriteRule ^daftar-member$ index.php?content=daftarmember [L]
+RewriteRule ^lupa-katasandi$ index.php?content=forgetpassword [L]
+RewriteRule ^ganti-katasandi([^/]*)$ index.php?content=recoverpassword&tempToken=$1 [L]
+RewriteRule ^member-login$ index.php?content=memberlogin [L]
+RewriteRule ^my-profile([^/]*)$ index.php?content=editprofile&memberId=$1 [L]
+RewriteRule ^ganti-katasandi([^/]*)$ index.php?content=changepass&memberId=$1 [L]
+RewriteRule ^riwayat-belanja([^/]*)$ index.php?content=shophistory&memberId=$1 [L]
+RewriteRule ^kirim-testimoni([^/]*)$ index.php?content=sendtestimony&memberId=$1 [L]
+RewriteRule ^member-logout$ index.php?content=memberlogout [L]
+</IfModule>
+
+############### SET Keep-Alive ##################
+<IfModule mod_headers.c>
+    Header set Connection keep-alive
+</IfModule>
+
+############### SET COOKIES DOMAIN ##################
+# Use Mod_deflate to compress static files
+<IfModule mod_deflate.c>
+	<filesmatch ".(js|css|ico|txt|htm|html|php)$">
+	SetOutputFilter DEFLATE
+	</filesmatch>
+</IfModule>

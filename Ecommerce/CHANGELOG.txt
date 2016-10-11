@@ -1,0 +1,185 @@
+<--- PiLUS Changelog --->
+
+>> PiLUS versi 1.4.0 | Oktober 06 s/d 11, 2016
+   #=============== BACK STORE =============#
+   + Memperbaiki fungsi newCustomer() pada modul customers
+   
+   #================ CORE ===================#
+   + Memperbaiki method simpanTransaksi pada kelas Order
+   + Memperbaiki method addCustomer pada kelas Customer
+   + Memperbaiki method registerMember pada kelas Customer
+   
+   #============== FRONT STORE ==============#
+    Thank's to Rahmat Hidayat Slamet(arhen)--upanastudio.com  :
+    
+   + Memperbaiki Bug pada file theme.php
+   + Memperbaiki Bug route.php
+   + Memperbaiki Bug Pendaftaran Member
+   
+   
+   
+>> PiLUS versi 1.4.0 | Agustus 05 s/d 10, 2016 <<
+   #=============== BACK STORE =============#
+   + require_once vs require (digunakan require bukan require_once karena mempengaruhi performa menjadil lebih cepat)
+   + Menambahkan opsi nomor faximile pada modul pengaturan
+   
+   #================ CORE ===================#
+   
+   
+   #============== FRONT STORE ==============#
+   
+   
+>> PiLUS versi 1.4.0 | Mei 01 s/d 7, 2016 <<
+
+   #=============== BACK STORE ==============#
+   + Memperbaiki modul pengaturan(option)
+   + Menambahkan icon logo PiLUS pada form login halaman administrator web
+   
+   - Bug pada pengisian form komentar 
+   - Menghilangkan checkbox Ingatkan saya pada form login halaman administrator
+   
+   #================== CORE =================#
+   
+   #============= FRONT STORE ===============#
+   
+>> PiLUS versi 1.4.0 | April 14 s/d 30, 2016 <<
+    
+    #============== BACK STORE ===============#
+   
+     + Memperbaiki data flow pada semua modul yang ada.
+     
+     + Update modul notifikasi :
+        *status notifikasi dapat diubah menjadi belum dibaca atau sudah dibaca.
+     
+     + Update modul Order :
+        *Jika status order = Lunas, maka akan dikirimkan email pemberitahuan ke kustomer.
+     
+     + Memperbaiki fitur grafik statistik pengunjung.
+     + Menambahkan modul kustomer.
+     + Memperbaiki desain pagination pada semua modul.
+     + Memperbaiki pesan pemberitahuan ketika tambah staff pada modul users. 
+     + Memperbaiki celah keamanan pada modul users. 
+     + Memperbaiki bug pada modul user. 
+     + Memperbaiki bug pada modul kustomer. 
+     + Memperbaiki notifikasi di bagian Top Menu sebelah kanan atas(Alert).
+     + Menambahkan notifikasi jika ada member baru.
+     
+    
+     - Bug pada pengisian form komentar 
+    
+   #================ CORE =====================#
+     
+     + Update kelas notification.
+     + Update kelas Order.
+     + Memperbaiki kelas customer.
+     + Menambahkan kelas responsivecaptcha.
+     
+   #============= FRONT STORE =================#
+  
+     + Mengubah desain UI Front Store pada template default.
+     + kustomer yang ingin menjadi Member dapat melakukan pendaftaran member.
+     + Member dapat mengganti kata sandi.
+     + Member dapat mengirim testimoni ke pemilik toko online.
+     + Memperbaiki data flow pembelian barang.
+   
+   
+>> PiLUS versi 1.4.0 | March 10 s/d 21, 2016 <<
+    
+    #==============BACK STORE===============#
+   
+     + Memperbaiki modul post - tulisan.
+     + Menambahkan modul tag/label pada modul post - tulisan.
+	 + Mengubah modul ongkos kirim menjadi modul kota/kabupaten.
+	 + Menambahkan modul province.
+     
+     - Bug pada modul users ketika akan edit user dan melihat detail biodata.
+     - Bug pada modul kustomer.
+      
+   #================CORE===================#
+     
+     + Menambahkan kelas tag - untuk label tulisan. 
+	 + Mengubah kelas city menjadi kelas ditrict.
+	 + Menambahkan kelas province.
+	 + Menambahkan kelas customer.
+     
+   #=============FRONT STORE=================#
+   
+   
+>> PiLUS versi 1.4.0 | February 01 s/d 07, 2016 <<
+
+   #==============BACK STORE===============#
+   
+     + Memperbaiki notifikasi pada bagian header halaman back store
+     + Memperbaiki fungsi updateProduct_Category() pada modul products 
+     
+   #================CORE===================#
+     
+    
+     + Menambahkan fungsi timeAgo(utilities)
+     
+     
+    
+   #=============FRONT STORE=================#
+   
+   
+>> PiLUS versi 1.4.0 | January 31, 2016 <<
+
+   #==============BACK STORE=================#
+   
+     + Memperbaiki fungsi listproducts() pada modul products
+     
+     
+   #=================CORE====================#
+    
+    
+   #=============FRONT STORE=================#
+  
+  
+>> PiLUS versi 1.4.0 | January 27, 2016 <<
+   
+    #==============BACK STORE=================#
+  
+    + Memperbaiki fungsi detailOrder() pada modul orders.
+    + Removed kolom keterangan kategori produk di list-prodcats.php
+   
+    #=============CORE==============#
+  
+    + Memperbaiki fungsi makeSlug(utilities)
+    + Menambahkan instansiasi objek blog dan blogCats.
+    
+    
+    #=============FRONT STORE=================#
+  
+  
+>> PiLUS versi 1.4.0 | January 24, 2016 <<
+
+    #=============BACK STORE==================#
+    
+    + Menampilkan text editor wysiwyg pada tag <textarea> ke semua modul yang terdapat tag <textarea>.
+    
+    #=============CORE================#
+  
+    + Memperbaiki method updateAdmin pada kelas admin.
+    + Memperbaiki method updateUserMeta pada kelas admin.
+  
+    #=============FRONT STORE=================#
+    
+
+>> PiLUS versi 1.4.0 | January 20, 2016 <<
+    
+     #=============BACK STORE==================#
+    
+     + Memperbaiki modul laporan(report).
+     + Menambahkan fitur install modul.
+     + Menambahkan fitur install template.
+   
+    
+     #=============CORE==============#
+  
+     + Menambahkan fungsi uploadTheme(utilities) 
+     + Menambahkan fungsi uploadModul(utilities)
+     + Menambahkan kelas pclzip thank's to Vincent Blavet.
+  
+     #=============FRONT STORE=================#
+    
+        
