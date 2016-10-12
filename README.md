@@ -4,8 +4,8 @@
 				  PiLUS
      Free Open Source E-commerce Software
 
-	  Contact    : webdev@kartatopia.com
-      Source     : http://getpilus.com
+	  Contact    :  piluscart@gmail.com
+      Source     : http://www.getpilus.com
       
 #==========================================#
 
@@ -26,11 +26,11 @@ B. PERSYARATAN SISTEM :
 
 C. INSTALASI PILUS DI KOMPUTER(PC):
 -----------------------------------------------------
-1. Buatlah folder di direktori web anda. 
+1. Buatlah folder di direktori web anda. <br>
    
-   contoh:
-   --> xampp = C:/xampp/htdocs/namafolder
-   --> wampp = C:/wampp/www/namafolder
+   contoh:<br>
+   --> xampp = C:/xampp/htdocs/namafolder<br>
+   --> wampp = C:/wampp/www/namafolder<br>
    
 2. Ekstrak file PiLUS-x.x.x.zip pada folder yang telah anda buat sebelumnya 
    
@@ -42,15 +42,15 @@ C. INSTALASI PILUS DI KOMPUTER(PC):
    5.1 File pengaturan bisa anda temukan di folder PiLUS --> core/setting.php :
    5.2 Setelah anda rename, maka lakukan pengaturan seperti contoh berikut:
        
-       // Database credential
-       define('PL_DBTYPE', '');  --> ketikkan type databasenya MySQL
-       define('PL_DBHOST', '');  --> ketikkan database host dengan localhost
-       define('PL_DBUSER', '');  --> ketikkan database user anda
-       define('PL_DBPASS', '');  --> ketikkan password database anda jika anda menggunkan password
-       define('PL_DBNAME', '');  --> ketikkan nama database yang telah anda buat
+       // Database credential<br>
+       define('PL_DBTYPE', '');  --> ketikkan type databasenya MySQL<br>
+       define('PL_DBHOST', '');  --> ketikkan database host dengan localhost<br>
+       define('PL_DBUSER', '');  --> ketikkan database user anda<br>
+       define('PL_DBPASS', '');  --> ketikkan password database anda jika anda menggunkan password<br>
+       define('PL_DBNAME', '');  --> ketikkan nama database yang telah anda buat<br>
        
-       // Site configuration
-       define('PL_DIR', ''); --> ketikkan lokasi URL (http://localhost/namafolder/) atau (http://namadomain)
+       // Site configuration<br>
+       define('PL_DIR', ''); --> ketikkan lokasi URL (http://localhost/namafolder/) atau (http://namadomain)<br>
      
        define('PL_SITEEMAIL', ''); -->ganti dengan alamat email anda
      
