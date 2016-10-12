@@ -2555,7 +2555,6 @@ function daftarMember()
 				$html[] = '<script type="text/javascript">function leave() { window.location = "daftar-member";} setTimeout("leave()", 3640);</script>';
 							
 		}
-		
 		// cek password
 		elseif (!isset($password) || !isset($confirmed) || $password != $confirmed )
 		{
