@@ -54,7 +54,7 @@ require_once ($getThemeActived->getTemplate_Folder() . '/widget.php');
 <meta name="webcrawlers" content="all" />
 <meta name="rating" content="general" />
 <meta name="spiders" content="all" />
-<meta name="generator" content="Bluefish 2.2.9" -" . PACK_VERSION; ?>"
+<meta name="generator" content="<?php echo PACK_TITLE . '|' . PACK_VERSION ?>" /> 
 
 <link rel="alternate" type="text/xml" title="<?php echo $siteName . " | " . $keywords; ?>"  href="content/feed" />
 <link href="<?php echo $getThemeActived -> getTemplate_Folder() . "/"; ?>css/templatemo_style.css" rel="stylesheet" type="text/css" />
