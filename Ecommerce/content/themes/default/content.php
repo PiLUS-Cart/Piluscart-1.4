@@ -878,7 +878,6 @@ function checkOut()
 	if ($ketemu < 1) {
 		
 		header('Location: ./');
-		exit(0);
 		
 	}
 	elseif (isset($_SESSION['memberLoggedIn'])) // check out bagi member yang login
@@ -2555,6 +2554,7 @@ function daftarMember()
 				$html[] = '<script type="text/javascript">function leave() { window.location = "daftar-member";} setTimeout("leave()", 3640);</script>';
 							
 		}
+		
 		// cek password
 		elseif (!isset($password) || !isset($confirmed) || $password != $confirmed )
 		{
@@ -3507,8 +3507,6 @@ function memberLogout()
 	//Redirect to Homepage
 	
 	echo '<META HTTP-EQUIV="Refresh" Content="0; URL="'.directPage().'">';
-	
-	exit();
 	
 }
 
