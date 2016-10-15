@@ -1361,7 +1361,7 @@ function checkedModule($module)
 	
 	$getModuleActivated = $moduleChecked -> isModuleActived($module);
 	
-	if ($getModuleActivated -> actived == 'Y') {
+	if ($getModuleActivated['actived'] == 'Y') {
 		
 		return true;
 		
