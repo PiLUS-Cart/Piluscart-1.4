@@ -259,7 +259,7 @@ class Module
 			
 			$sth = $dbh -> query($sql);
 			
-			return $sth -> fetchObject();
+			return $sth -> fetch();
 			
 		
 		} else {
