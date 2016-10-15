@@ -104,7 +104,13 @@ class Paginator
 	 */
 	public function get_limit()
 	{
-		return "LIMIT ".$this->get_start().",$this->_perPage";
+		global $sanitasi;
+		
+		$position = $sanitasi ->sanitasi((int)$this->get_start(), 'sql');
+		$limit = $sanitasi ->sanitasi((int)$this->_perPage, 'sql');
+		
+		return "LIMIT ".$position.",$limit";
+		
 	}
 
 	/**
