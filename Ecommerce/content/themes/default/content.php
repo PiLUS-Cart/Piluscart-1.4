@@ -18,6 +18,7 @@ if (!defined('PILUS_SHOP')) header("Location: 403.php");
 
 $content = null;
 $contentLoaded = null;
+$total = null;
 $contentError = "404.php";
 $keyword = isset($_POST['keyword']) ? htmlentities(htmlspecialchars($_POST['keyword']), ENT_QUOTES) : "";
 $prodcat_slug = isset($_GET['catslug']) ? htmlentities(strip_tags($_GET['catslug'])) : "";
@@ -608,7 +609,7 @@ function contactForm()
 function basket() 
 {
 
-	global $shoppingCart, $action, $productId, $sanitasi;
+	global $shoppingCart, $action, $productId, $sanitasi, $total;
 
 	$html = array();
 
@@ -616,7 +617,6 @@ function basket()
 
 	$cleaned = $sanitasi -> sanitasi($productId, 'sql');
 
-	$total = null;
 	
 	if (isset($action) && $action == 'additem') {
 		
@@ -862,13 +862,15 @@ function basket()
 function checkOut() 
 {
 
-	global $shoppingCart;
+	global $shoppingCart, $total;
 
 	$html = array();
 
 	$dbh = new Pldb;
 
 	$sid =  session_id();
+	
+	$totalberat = null;
 
 	// cek sesi temporer produk dan hitung jumlahnya
 	$ketemu = $shoppingCart -> checkItems($sid);
