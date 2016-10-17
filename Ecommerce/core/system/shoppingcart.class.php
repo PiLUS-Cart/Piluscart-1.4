@@ -378,7 +378,7 @@ class ShoppingCart
 				{
 					for ($i = 0; $i < $jml; $i++)
 					{
-						$sth2 = $dbh -> query("DELETE FROM pl_orders WHERE date_orders < '$yesterday' AND status='baru'");
+						$sth2 = $dbh -> query("DELETE FROM pl_orders WHERE date_order < '$yesterday' AND status='baru'");
 					}
 				}
 				else 
