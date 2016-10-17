@@ -31,6 +31,7 @@ $tempToken = isset($_GET['tempToken']) ? htmlentities(strip_tags($_GET['tempToke
 $memberId = isset($_GET['memberId']) ? abs((int)$_GET['memberId']) : 0;
 $memberToken = isset($_GET['memberToken']) ? htmlentities(strip_tags($_GET['memberToken'])) : "";
 
+
 include_once('route.php');
 
 // *****************HOMEPAGE*************** //
@@ -615,6 +616,8 @@ function basket()
 
 	$cleaned = $sanitasi -> sanitasi($productId, 'sql');
 
+	$total = null;
+	
 	if (isset($action) && $action == 'additem') {
 		
 		$sid = session_id();
@@ -628,7 +631,7 @@ function basket()
 
 		if ( $stok == 0) {
 			
-			echo "<script>window.alert('Stok Habis!');
+			$html[] = "<script>window.alert('Stok Habis!');
 					window.location=('".PL_DIR."')</script>";
 			
 		} else {
