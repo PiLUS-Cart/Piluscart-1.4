@@ -18,7 +18,7 @@ theme_advanced_resizing : true
 
 function openKCFinder(field_name, url, type, win) {
     tinyMCE.activeEditor.windowManager.open({
-        file: '../studio/kcfinder/browse.php?opener=tinymce&type=' + type,
+        file: '../cabin/kcfinder/browse.php?opener=tinymce&type=' + type,
         title: 'KCFinder',
         width: 700,
         height: 500,
