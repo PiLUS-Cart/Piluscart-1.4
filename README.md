@@ -1,7 +1,7 @@
-# PiLUS - Free Open Source E-commerce Solution
-#==========================================#
+# Piluscart - Free Open Source E-commerce Solution(DEPRECATED)
+#===============================================================#
 
-				  PiLUS
+				  Piluscar-1.4
      Free Open Source E-commerce Software
 
 	  Contact    :  piluscart@gmail.com
@@ -9,11 +9,11 @@
       
 #==========================================#
 
-A. Apa itu PiLUS ?
+A. Apa itu Piluscart ?
 -------------------------------------------
-PiLUS adalah web based online shop management system, yaitu aplikasi berbasis web untuk mengelola toko online. 
+Piluscart adalah web based online shop management system, yaitu aplikasi berbasis web untuk mengelola toko online. 
 Untuk menggunakan dan menjalankan PiLUS diperlukan server web dengan PHP dan MySQL. 
-PiLUS merupakan aplikasi sumber terbuka(Open Source) dan gratis(Free) yang didistribusikan dibawah lisensi GPL versi 3. 
+Piluscart merupakan aplikasi sumber terbuka(Open Source) dan gratis(Free) yang didistribusikan dibawah lisensi GPL versi 3. 
 
 B. PERSYARATAN SISTEM :
 -------------------------------------------
